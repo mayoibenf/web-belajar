@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>SMK IBENYU</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', sans-serif;
+}
+body{
+    line-height:1.6;
+}
+
+/* NAVBAR */
+.navbar{
+    background:#1e3799;
+    color:white;
+    padding:15px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.navbar ul{
+    list-style:none;
+    display:flex;
+    gap:20px;
+}
+.navbar a{
+    color:white;
+    text-decoration:none;
+    font-weight:500;
+}
+
+/* HERO */
+.hero{
+    height:90vh;
+    background:
+    linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
+    url("https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    padding:0 60px;
+    color:white;
+}
+.hero h2{
+    font-size:40px;
+}
+.hero p{
+    margin-top:10px;
+}
+.hero button{
+    margin-top:20px;
+    padding:12px 28px;
+    border:none;
+    background:#fbc531;
+    color:#2f3640;
+    font-size:16px;
+    border-radius:6px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+/* SECTION */
+.section{
+    padding:60px;
+    text-align:center;
+}
+.gray{
+    background:#f5f6fa;
+}
+
+/* JURUSAN */
+.cards{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+    margin-top:30px;
+}
+.card{
+    background:white;
+    width:280px;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 8px 18px rgba(0,0,0,.1);
+}
+.card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+}
+.card h3{
+    padding:15px;
+}
+.card p{
+    padding:0 15px 20px;
+    font-size:14px;
+}
+
+/* FOOTER */
+footer{
+    background:#1e3799;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+    .hero h2{
+        font-size:28px;
+    }
+    .navbar{
+        flex-direction:column;
+        gap:10px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <h1>SMK IBENYU</h1>
+    <ul>
+        <li><a href="#home">Beranda</a></li>
+        <li><a href="#profil">Profil</a></li>
+        <li><a href="#jurusan">Jurusan</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+    </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+    <div>
+        <h2>SMK IBENYU</h2>
+        <p>Unggul dalam Teknologi, Terampil & Siap Kerja</p>
+        <button onclick="daftar()">Pendaftaran Siswa Baru</button>
+    </div>
+</section>
+
+<!-- PROFIL -->
+<section class="section" id="profil">
+    <h2>Profil Sekolah</h2>
+    <p>
+        SMK IBENYU merupakan sekolah kejuruan yang berfokus
+        pada pengembangan keterampilan, teknologi, dan karakter
+        siswa agar siap bersaing di dunia kerja maupun industri.
+    </p>
+</section>
+
+<!-- JURUSAN -->
+<section class="section gray" id="jurusan">
+    <h2>Program Keahlian</h2>
+    <div class="cards">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475">
+            <h3>RPL</h3>
+            <p>Rekayasa Perangkat Lunak (Coding, Web, Aplikasi)</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837">
+            <h3>TKJ</h3>
+            <p>Teknik Komputer & Jaringan</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1602526219045-bfdfe56b1a1c">
+            <h3>MM</h3>
+            <p>Multimedia (Desain, Video, Animasi)</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- KONTAK -->
+<section class="section" id="kontak">
+    <h2>Kontak Sekolah</h2>
+    <p>📍 Alamat: Jl. Pendidikan No. 10</p>
+    <p>📧 Email: smkibenyu@gmail.com</p>
+    <p>📞 Telp: 08xx-xxxx-xxxx</p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 SMK IBENYU</p>
+</footer>
+
+<script>
+function daftar(){
+    alert("Pendaftaran SMK IBENYU akan segera dibuka!");
+}
+</script>
+
+</body>
+</html>
